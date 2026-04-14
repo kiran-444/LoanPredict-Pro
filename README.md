@@ -199,26 +199,31 @@ Open `frontend/index.html` in your browser, fill in the applicant details, and c
 ## 📁 Project Structure
 
 ```
-Mini_Project/
-│
-├── backend/
-│   ├── app.py                  ← Flask API server
-│   ├── stacking_model.pkl      ← Trained stacking classifier
-│   ├── scaler.pkl              ← StandardScaler
-│   ├── ohe_encoder.pkl         ← OneHotEncoder
-│   └── label_encoder.pkl       ← LabelEncoder
-│
-├── frontend/
-│   ├── index.html              ← Web UI
-│   ├── style.css               ← Styling
-│   └── script.js               ← Form logic & API calls
-│
-├── loan_approval.py            ← ML model training script
-├── loan_dataset.csv
-├── loan.png                    ← UI screenshot
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── 📁 app
+│   └── 🐍 app.py
+├── 📁 data
+│   ├── 📁 processed
+│   │   └── 📄 loan_data_cleaned.csv
+│   └── 📁 raw
+│       └── 📄 loan_dataset.csv
+├── 📁 models
+├── 📁 notebooks
+│   ├── 📄 01_EDA and Data_preprocessing.ipynb
+│   ├── 📄 02_Feature_engineering.ipynb
+│   └── 📄 03_Model_training.ipynb
+├── 📁 report
+├── 📁 static
+│   ├── 📁 css
+│   │   └── 🎨 style.css
+│   ├── 📁 images
+│   │   └── 🖼️ ui.png
+│   └── 📁 js
+│       └── 📄 script.js
+├── 📁 templates
+│   └── 🌐 index.html
+├── ⚙️ .gitignore
+├── 📝 README.md
+└── 📄 requirements.txt
 ```
 
 ---
