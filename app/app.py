@@ -7,10 +7,10 @@ app = Flask(__name__)
 CORS(app)
 
 # Load artifacts
-model  = joblib.load("stacking_model.pkl")
-scaler = joblib.load("scaler.pkl")
-ohe    = joblib.load("ohe_encoder.pkl")
-le2    = joblib.load("education_encoder.pkl")
+model  = joblib.load("../models/stacking_model.pkl")
+scaler = joblib.load("../models/scaler.pkl")
+ohe    = joblib.load("../models/ohe_encoder.pkl")
+le2    = joblib.load("../models/education_encoder.pkl")
 
 @app.route("/predict", methods=["POST"])
 def predict():
