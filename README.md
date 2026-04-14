@@ -122,7 +122,7 @@ The project includes a fully functional **web-based prediction interface** built
 
 ### UI Preview
 
-![Loan Prediction UI](screenshots/ui.png)
+![Loan Prediction UI](./report/figures/ui.png)
 
 ### Input Fields Covered
 
